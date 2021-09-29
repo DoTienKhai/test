@@ -1,0 +1,243 @@
+header{}
+header .container-fluid{}
+header .container-fluid.header{
+    height: 100vh;
+
+    background-image: url("./resources/images/bg-masthead.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+header .container-fluid.header .bar i{
+    width: 40px;
+    height: 30px;
+
+    line-height: 28px;
+
+    border-radius: 4px;
+
+    background-color: rgb(141, 139, 139);
+}
+
+.bars{
+    width: 300px;
+
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    transform: translateX(100%);
+    transition: transform linear 0.3s;
+}
+
+header .container-fluid.header #bar-check{
+    /* display: none; */
+}
+
+.check-bar{
+    display: none;
+}
+
+#nav-overlay{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    z-index: 1;
+
+    display: none;
+
+    animation: fadeIn ease-in 0.2s;
+}
+
+header .container-fluid.header .bars .start-bootstrap{
+
+}
+
+header .container-fluid.header .bars .start-bootstrap p{
+    font-size: 1.4rem;
+}
+
+header .container-fluid.header .bars .start-bootstrap i{
+    font-size: 1.2rem;
+    
+    cursor: pointer;
+
+    width: 40px;
+    height: 30px;
+
+    background-color: rgb(104, 104, 104);
+    border-radius: 4px;
+}
+
+header .container-fluid.header .bars ul li{
+    list-style-type: none;
+}
+
+header .container-fluid.header .bars ul li a{
+    text-decoration: none;
+
+    font-size: 0.8rem;
+}
+
+.check-bar:checked ~ #nav-overlay{
+    display: block;
+}
+
+.check-bar:checked ~ .bars{
+    transform: translateX(0%);
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+header .container-fluid.header .stylish{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+button{
+    width: 160px;
+    height: 58px;
+}
+
+main{
+
+}
+
+main .container-fluid{}
+main .container-fluid .offer{
+    padding: 80px;
+}
+
+main .container-fluid .service{
+    
+}
+
+main .container-fluid .service .circle{
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+    
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+main .container-fluid .service .description{
+    color: rgb(214, 214, 214);
+}
+
+main .container-fluid .service .circle i{
+    font-size: 2.4rem;
+}
+
+main .container-fluid .download{
+    height: 80vh;
+    background-image: url("./resources/images/bg-callout.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+main .container-fluid .next-website{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+main .container-fluid .portfolio{
+    padding: 60px 200px;
+}
+
+main .container-fluid .portfolio .project{
+    position: relative;
+}
+
+main .container-fluid .portfolio .project img{
+    width: 100%;
+}
+
+main .container-fluid .portfolio .project .name{
+    position: absolute;
+
+    top: 60%;
+    left: 10%;
+
+    width: 100%;
+}
+
+footer{
+    position: relative;
+}
+
+footer .socials .contact{
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background-color: rgb(3, 133, 184);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .socials .contact a i{
+    font-size: 1.8rem;
+}
+
+footer .anchor{
+    width: 30px;
+    height: 30px;
+
+    background-color: rgb(202, 202, 202);
+
+    position: absolute;
+
+    right: 30px;
+}
+
+@media (max-width: 767px) {
+    main .container-fluid .portfolio .project{
+        margin-top: 30px;
+    }
+
+    main .container-fluid .portfolio .project .name{
+        top: 40%;
+        left: 4%;
+    }
+}
+
+@media (max-width: 992px) {
+    main .container-fluid .portfolio .project{
+        padding-top: 20px;
+    }
+}
